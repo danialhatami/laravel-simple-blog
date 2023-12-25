@@ -40,7 +40,7 @@ docker-compose up --build
 - Includes unit tests for service classes.
 - Utilizes Docker for containerization.
 - Equipped with migrations, factories, and seeders for a robust and realistic data setup.
-- Simple access control configuration for fine-tuned user permissions. [👉 config file](http://github.com) 
+- Simple access control configuration for fine-tuned user permissions. [👉 config file](https://github.com/danialhatami/laravel-simple-blog/blob/master/config/access_control.php) 
 - Enhanced performance with caching for faster article retrieval.
 
 
@@ -75,10 +75,10 @@ password: admin123
 ### 📂 Fast Access: Key Files at Your Fingertips
 Need to jump straight to the heart of the action?  
 Here are quick links to some of the most crucial files in this project:
-- Service File  [👉 ArticleService](http://github.com)
-- Unit Tests  [👉 ArticleUnitTest](http://github.com)
-- Filament Resource [👉 ArticleResource](http://github.com)
-- Access Control Seeder [👉 RolesAndPermissionSeeder](http://github.com)
+- Service File  [👉 ArticleService](https://github.com/danialhatami/laravel-simple-blog/blob/master/app/Services/ArticleService.php)
+- Unit Tests  [👉 ArticleUnitTest](https://github.com/danialhatami/laravel-simple-blog/blob/master/tests/Unit/ArticleServiceTest.php)
+- Filament Resource [👉 ArticleResource](https://github.com/danialhatami/laravel-simple-blog/tree/master/app/Filament/Resources)
+- Access Control Seeder [👉 RolesAndPermissionSeeder](https://github.com/danialhatami/laravel-simple-blog/blob/master/database/seeders/RolesAndPermissionsSeeder.php)
 
 <b>Dive Deeper</b> For an enchanting journey through every nook and cranny of this project, kindly open your IDE's magical gates.  
 [👀 Project in IDE MODE](http://github.dev/danialhatami/laravel-simple-blog)
