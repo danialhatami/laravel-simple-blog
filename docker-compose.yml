@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "8000:8000"
+        volumes:
+            - .:/var/www/html
+        depends_on:
+            - mysql
+            - redis
+        command: sh -c "cp .env.example .env && npm install  && npm run build && (npm run dev&) && COMPOSER_PROCESS_TIMEOUT=20000 composer install && php artisan key:generate && php artisan migrate --seed && php artisan serve --host=0.0.0.0"
+
+    mysql:
+        image: docker.arvancloud.ir/mysql:8.0
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_DATABASE: laravel_blog
+            MYSQL_ROOT_PASSWORD: password
+        volumes:
+            - mysql-data:/var/lib/mysql
+
+    redis:
+        image: docker.arvancloud.ir/redis:alpine
+        ports:
+            - "6379:6379"
+
+volumes:
+    mysql-data:
