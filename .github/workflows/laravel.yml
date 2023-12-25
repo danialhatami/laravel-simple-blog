@@ -21,7 +21,10 @@ jobs:
     - name: Install Dependencies
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
     - name: Generate key
-      run: php artisan key:generate
+      run: php artisan key:generate --show
+      id: generate-key
+    - name: Set APP_KEY environment variable
+      run: echo "APP_KEY=${{ steps.generate-key.outputs.key }}" >> $GITHUB_ENV
     - name: Directory Permissions
       run: chmod -R 777 storage bootstrap/cache
     - name: Create Database
@@ -30,6 +33,7 @@ jobs:
         touch database/database.sqlite
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
+        APP_KEY: ${{ env.APP_KEY }}
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
