@@ -84,4 +84,50 @@ Here are quick links to some of the most crucial files in this project:
 [👀 Project in IDE MODE](http://github.dev/danialhatami/laravel-simple-blog)
 
 ### 📸 Screenshots
+![slider](/screenshots/slider.gif)
 
+#### With Details 👇
+<details>
+  <summary>Articles List</summary>
+  <img src="./screenshots/s1.png" alt="image-description"/>
+</details>
+<details>
+  <summary>Author - Admin Panel</summary>
+  <img src="./screenshots/s3.png" alt="image-description"/>
+</details>
+<details>
+  <summary>Article Filters - Admin Panel</summary>
+  <img src="./screenshots/s4.png" alt="image-description"/>
+</details>
+<details>
+  <summary>Article List - Pagination</summary>
+  <img src="./screenshots/s5.png" alt="image-description"/>
+</details>
+<details>
+  <summary>Admin - User Dashboard</summary>
+  <img src="./screenshots/s6.png" alt="image-description"/>
+</details>
+<details>
+  <summary>Admin - Publish Article</summary>
+  <img src="./screenshots/s7.png" alt="image-description"/>
+</details>
+<details>
+  <summary>Admin - View Article Details</summary>
+  <img src="./screenshots/s8.png" alt="image-description"/>
+</details>
+<details>
+  <summary>Admin - Articles List</summary>
+  <img src="./screenshots/s9.png" alt="image-description"/>
+</details>
+<details>
+  <summary>Author - Article Details</summary>
+  <img src="./screenshots/s10.png" alt="image-description"/>
+</details>
+<details>
+  <summary>Admin - Edit Article</summary>
+  <img src="./screenshots/s11.png" alt="image-description"/>
+</details>
+<details>
+  <summary>User - User Dashboard</summary>
+  <img src="./screenshots/s12.png" alt="image-description"/>
+</details>
