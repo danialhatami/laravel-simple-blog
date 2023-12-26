@@ -1,5 +1,4 @@
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
 <img src="https://img.shields.io/badge/❤️-PHP_8.2-8A2BE2" alt="Framework">
 <img src="https://img.shields.io/badge/Framework-Laravel_10-red" alt="Framework">
 <img src="https://img.shields.io/badge/Admin Panel-FilamentPHP_3-FFBF00" alt="Framework">
